@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="modo-de-juego-container">
+        <button class="modo-de-juego" id="easy">FÁCIL</button>
+        <button class="modo-de-juego" id="medium">MEDIO</button>
+        <button class="modo-de-juego" id="hard">DIFICIL</button>
+        <button class="modo-de-juego" id="extreme">EXTREMO</button>
+        <button class="modo-de-juego" id="aleatorio">ALEATORIO</button>
+        <h1 id="modo-seleccionado"></h1>
+      </div>
+      <div id="palabra-container">
+        <input type="text" placeholder="Palabra o frase" id="palabra" />
+        <button id="button-palabra">ACEPTAR</button>
+      </div>
+      <div id="image-container">
+        <img src="0.png" class="imagen-ahorcado" id="ahorcado-0" />
+        <img src="1.png" class="imagen-ahorcado" id="ahorcado-1" />
+        <img src="2.png" class="imagen-ahorcado" id="ahorcado-2" />
+        <img src="3.png" class="imagen-ahorcado" id="ahorcado-3" />
+        <img src="4.png" class="imagen-ahorcado" id="ahorcado-4" />
+        <img src="5.png" class="imagen-ahorcado" id="ahorcado-5" />
+        <img src="6.png" class="imagen-ahorcado" id="ahorcado-6" />
+        <img src="7.png" class="imagen-ahorcado" id="ahorcado-7" />
+        <img src="8.png" class="imagen-ahorcado" id="ahorcado-8" />
+        <img src="9.png" class="imagen-ahorcado" id="ahorcado-9" />
+        <img src="10.png" class="imagen-ahorcado" id="ahorcado-10" />
+        <img src="11.png" class="imagen-ahorcado" id="ahorcado-11" />
+        <img src="12.png" class="imagen-ahorcado" id="ahorcado-12" />
+      </div>
+      <div id="letras-container"></div>
+      <div>
+        <p id="idInput" style="display: none"></p>
+      </div>
+      <h1 id="attempts-remaining"></h1>
+      <p id="letras-usadas"></p>
+
+      <button id="button-comparar">VERIFICAR</button>
+      <div id="abecedario">
+        <button class="letras-abecedario" value="A">A</button>
+        <button class="letras-abecedario" value="B">B</button>
+        <button class="letras-abecedario" value="C">C</button>
+        <button class="letras-abecedario" value="D">D</button>
+        <button class="letras-abecedario" value="E">E</button>
+        <button class="letras-abecedario" value="F">F</button>
+        <button class="letras-abecedario" value="G">G</button>
+        <button class="letras-abecedario" value="H">H</button>
+        <button class="letras-abecedario" value="I">I</button>
+        <button class="letras-abecedario" value="J">J</button>
+        <button class="letras-abecedario" value="K">K</button>
+        <button class="letras-abecedario" value="L">L</button>
+        <button class="letras-abecedario" value="M">M</button>
+        <button class="letras-abecedario" value="N">N</button>
+        <button class="letras-abecedario" value="Ñ">Ñ</button>
+        <button class="letras-abecedario" value="O">O</button>
+        <button class="letras-abecedario" value="P">P</button>
+        <button class="letras-abecedario" value="Q">Q</button>
+        <button class="letras-abecedario" value="R">R</button>
+        <button class="letras-abecedario" value="S">S</button>
+        <button class="letras-abecedario" value="T">T</button>
+        <button class="letras-abecedario" value="U">U</button>
+        <button class="letras-abecedario" value="V">V</button>
+        <button class="letras-abecedario" value="W">W</button>
+        <button class="letras-abecedario" value="X">X</button>
+        <button class="letras-abecedario" value="Y">Y</button>
+        <button class="letras-abecedario" value="Z">Z</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  font-family: "Bruno Ace", sans-serif;
+}
+body {
+  margin: 0;
+  background: #0f172a;
+  text-align: center;
+}
+
+button {
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(107, 235, 248, 0.8);
+}
+#attempts-remaining {
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+#letras-usadas {
+  color: rgb(180, 211, 154);
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#game-container {
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  display: none;
+  color: white;
+}
+#palabra {
+  display: none;
+  text-align: center;
+  width: 30rem;
+  height: 2rem;
+  font-size: 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.letras-input {
+  text-align: center;
+  color: white;
+  background: transparent;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin: 0.4rem 0.5rem;
+  border: 0;
+  border-bottom: 2px solid white;
+  font-size: 1.9rem;
+}
+.comparar-input {
+  display: none;
+}
+#abecedario {
+  margin: 0.73rem auto;
+  width: 40rem;
+  text-align: center;
+}
+.letras-abecedario {
+  margin: 0.2rem;
+  color: #fff;
+  background-color: rgba(107, 235, 248, 0.4);
+  box-shadow: 0 0 10px rgba(107, 235, 248, 0.5);
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+#modo-de-juego-container {
+  margin: 0 auto;
+}
+.modo-de-juego {
+  color: #fff;
+  font-size: 2rem;
+  margin: 1rem;
+  background-color: rgba(107, 235, 248, 0.7);
+  box-shadow: 0 0 10px rgba(107, 235, 248, 0.5);
+}
+#button-palabra {
+  color: #fff;
+  display: none;
+  font-size: 1.6rem;
+  background-color: rgba(107, 235, 248, 0.7);
+  box-shadow: 0 0 10px rgba(107, 235, 248, 0.5);
+}
+.imagen-ahorcado {
+  display: none;
+  width: 11.5rem;
+}
+#button-comparar {
+  color: #fff;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-size: 2rem;
+  display: none;
+  background-color: rgba(107, 235, 248, 0.2);
+  box-shadow: 0 0 10px rgba(107, 235, 248, 0.5);
+}
+@media (max-width: 600px) {
+  #palabra {
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.7rem;
+  }
+  #attempts-remaining {
+    font-size: 0.9rem;
+  }
+  #letras-usadas {
+    font-size: 0.9rem;
+  }
+  .letras-input {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 1.3rem;
+    margin: 0.2rem;
+  }
+  .imagen-ahorcado {
+    width: 8rem;
+  }
+  #abecedario {
+    width: 23rem;
+  }
+  .letras-abecedario {
+    margin: 0.3rem;
+    font-size: 1.4rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .modo-de-juego {
+    font-size: 1.4rem;
+    margin: 1rem 0.1rem;
+  }
+  #button-palabra {
+    font-size: 1.3rem;
+  }
+  #button-comparar {
+    font-size: 1.3rem;
+  }
+  #game-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  body {
+    text-align: center;
+  }
+}
